@@ -1,0 +1,117 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body 
+{
+  font-family: 'Courier New', Courier, monospace;
+  color: #000;
+  background: #D3D3D3;
+}
+
+h1 
+{
+  font-size: 25px;
+  font-weight: normal;
+  padding: 1em 0 0 15em;
+
+}
+
+  h2 
+  {
+    font-size: 25px;
+    font-weight: normal;
+    padding: 1em 0 0 15em;
+  }
+  
+.tabs 
+{
+
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+  text-align: left;
+}
+
+ul 
+{
+  list-style-type: disc;
+}
+
+.tabs li
+ {
+ 
+  display: block;
+}
+
+.tabs input[type="radio"]
+ {
+  position: relative;
+  top: 0;
+  left: -9999px;
+}
+
+p 
+{
+  
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 5em;
+  margin-inline-start: 15em;
+  margin-inline-end: 0px;
+
+}
+
+li 
+{
+  text-align: -webkit-match-parent;
+}
+
+.tabs label
+ {
+  font-size: 20px;
+  font-weight: normal;
+  background: #ADD8E6;
+  cursor: pointer;
+  top: 4px;
+}
+
+.tabs label:hover 
+{
+  background: #000080;
+  color: #fff;
+}
+
+.tabs .tab-content
+ {  
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 25px;
+  position: absolute;
+  top: 8em;
+  left: 0;
+  
+}
+
+.tabs [id^="tab"]:checked + label 
+{
+  top: 0;
+  background: #32CD32;
+
+}
+
+.tabs [id^="tab"]:checked ~ [id^="tab-content"]
+ {
+  display: block;
+}
+
+

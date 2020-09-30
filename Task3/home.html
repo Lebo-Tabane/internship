@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Convid 19 Pre-Screening Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/style.css" />
+    <script src="js/validate.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form name="preScreening" action="" method="POST" onsubmit="return validateform()" >
+            <h2> Convid 19 Pre-Screening Form </h2>
+
+            <div id="form-group">
+                <div class="input-box">
+                    <label for="first_name">First Name</label><span class="required">*</span></br>
+                    <input type="text" name="firstname" id="firstname">
+                </div>
+
+                <div class="input-box">
+                    <label for="last_name">Last Name</label><span class="required">*</span></br>
+                    <input type="text" name="lastname" id="lastname">
+                </div>
+            </div>
+
+            <div id="form-group">
+                <div class="input-box">
+                    <label for="tel">Phone Number</label><span class="required">*</span></br>
+                    <input type="tel" name="tel" id="tel" maxlength="10">
+                </div>
+
+                <div class="input-box">
+                    <label for="id">ID Number</label><span class="required">*</span></br>
+                    <input type="tel" name="id" id="id"  maxlength="13">
+                </div>
+            </div>
+
+            <div id="form-group">
+                <div class="input-box">
+                    <label for="gender"> Gender </label> </br></br>
+                    <label class="radio"> 
+                        <input type="radio" id="male" name="gender" value="male" >
+                        <label for="male">Male</label> 
+                 
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </label>
+                   
+                </div>
+
+                <div class="input-box">
+                    <label for="email">Email Address</label><span class="required">*</span></br>
+                    <input type="email" name="email" id="email">                                
+                </div>
+            </div>
+
+            <div id="form-group">
+                <div class="input-box">
+                    <label for="address">Address</label><span class="required">*</span></br>
+
+                    <input type="text" name="address1" id="address1" placeholder="street address, company name"> <br>
+                    <label for="address1">Street address/ company name</label></br></br>
+
+                    <input type="text" name="address2" id="address2" placeholder="street address Line 2 , building, apartment"></br>
+                    <label for="address2">street address Line 2/ building/ apartment</label></br></br>
+
+                    <input type="text" name="city" id="city" placeholder="city, town"></br>
+                    <label for="city">city/ town</label></br></br>
+
+                    <input type="text" name="state" id="state" placeholder="State, Province"></br>
+                    <label for="state">state/ province</label></br></br>
+
+                    <input type="text" name="zip" id="zip" placeholder="postal code, zip"></br>
+                    <label for="zip">state/ province</label></br></br>
+
+                    <label for="date">Date:</label></br>
+                    <input type="date" id="date" name="date">
+                       
+                </div>
+                <div class="input-box">
+                    <label for="symptoms">Do you have any of the following symptoms?</label><span class="required">*</span></br>
+                    <input type="checkbox" id="symptom1" name="checkbox" value="pain">
+                    <label for="symptoms"> Persistent Pain in the Chest</label><br>
+
+                    <input type="checkbox" id="symptom2" name="checkbox" value="fever">
+                    <label for="symptoms"> Fever </label><br>
+
+                    <input type="checkbox" id="symptom3" name="checkbox" value="cough">
+                    <label for="symptoms"> Cough </label><br>
+
+                    <input type="checkbox" id="symptom4" name="checkbox" value="breath_shortness">
+                    <label for="symptoms"> Shortness of breath or any difficulty breathing </label><br>
+
+                    <input type="checkbox" id="symptom5" name="checkbox" value="no_symptoms">
+                    <label for="symptoms"> No Symptoms </label><br></br>
+                
+                </div>
+
+                <div class="input-box">
+                    <label for="symptoms">Have you been in contact with anyone who is experiencing these symptoms? </label><span class="required">*</span></br> 
+                    <label class="radio"> 
+                        <input type="radio" id="yes" name="symptoms" value="symptoms" checked>
+                        <label for="yes">Yes</label> 
+                    </label></br>
+
+                    <label class="radio"> 
+                        <input type="radio" id="no" name="symptoms" value="symptoms">
+                        <label for="no">No</label>
+                    </label></br></br>
+                   
+                </div>
+
+                <div class="input-box">
+                    <label for="symptoms"> Have you travelled abroad during 2020? </label><span class="required">*</span></br> </br>
+                    <label class="radio"> 
+                        <input type="radio" id="yes" name="traveling" value="traveling" checked>
+                        <label for="yes">Yes</label>
+                    </label></br>
+                    
+                    <label class="radio"> 
+                        <input type="radio" id="no" name="traveling" value="traveling">
+                        <label for="no">No</label>
+                    </label></br></br>
+
+                    <label for="place_visited"> List of place(s) visited </label><span class="required">*</span></br> </br>
+                    <textarea name="textarea"  placeholder="City/Country visited" rows="10" cols="60" id="textarea"></textarea>
+                   
+                    
+                </div>
+                
+            </div>
+          
+            <input type="submit" class="button" value="register" onclick="validateform()" > 
+        </form>
+    </div>
+   
+    
+</body>
+</html>

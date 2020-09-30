@@ -1,0 +1,74 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+.container 
+{
+
+}
+form .input-box
+{
+    float: left;
+    width: 50%;
+}
+
+#form-group 
+{
+    padding: 2em 0 2em 0; /*space on the top and bottom */
+}
+
+.required 
+{
+    color: red;
+    font-size: 1.2em;
+}
+
+input[type=text],[type=tel], [type=number], [type=email], [type=date]
+{
+    width: 50%;
+    padding: 8px 10px;
+    margin: 8px 0;
+}
+
+label
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+.radio { 
+    font-size: 15px; 
+    font-weight: 100; 
+    padding: 0 20px 0 0;
+    display: inline-flex; 
+    color: black; 
+}  
+
+textarea
+{
+    resize: none;
+    padding: 8px;
+}
+
+.button 
+{
+    background-color: #000080;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4em  0 4em 0;
+    cursor: pointer;
+  }
+
+  .container
+  {
+    margin-right: auto;
+    margin-left:  auto;
+    max-width: 1002px;
+    padding-right: 10px;
+    padding-left:  10px;
+  }
